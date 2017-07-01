@@ -3,15 +3,15 @@
 var calculation = [];
 var current = "";
 var running = "";
-var lastClicked = ["/", "+", "*", "-"];
+var operators = ["/", "+", "*", "-"];
 
 function buttonClick(button) {
-  if (lastClicked.indexOf(button) < 0) {
+  if (operators.indexOf(button) < 0) {
     current += button;
     running += button;
     $(".display-output").html(current);
     $(".display-running").html(running);
-  } else if (lastClicked.indexOf(button) >= 0) {
+  } else if (operators.indexOf(button) >= 0) {
     calculation.push(current);
     current = "";
     calculation.push(button);
@@ -41,7 +41,7 @@ function buttonCalculate() {
   calculation.push(current);
   var temp = [];
   calculation.forEach(function(item) {
-    if (lastClicked.indexOf(item) < 0) {
+    if (operators.indexOf(item) < 0) {
       temp.push(Number(item));
     } else {
       temp.push(item);
