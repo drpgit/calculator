@@ -1,0 +1,48 @@
+.calculator {
+  border: 1px black solid;
+  border-radius: 5%;
+  padding: 5px;
+  background: lightblue;
+}
+
+h3 {
+  text-align: center;
+  color: maroon;
+}
+
+.display {
+  background: white;
+  border: 1px black solid;
+  color: black;
+  text-align: right;
+  width: 100%;
+  padding: 5px;
+}
+
+.display-output {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.display-running {
+  font-size: 0.7em;
+  font-weight: lighter;
+}
+
+.button {
+  background: black;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  width: 25%;
+}
+
+.button:hover {
+  background: lightgrey;
+  color:black;
+}
+
+.button:active {
+  background: red;
+  color: white;
+}
